@@ -1,0 +1,83 @@
+[
+  {
+    "url": "https://dl.acm.org",
+    "name": "The Undecidability of Overfitting in Automated Program",
+    "snippet": "Jul 8, 2026 — Overfitting is one of the most persistent challenges in automated program repair (APR), typically attributed to weak or incomplete test suites. Read more",
+    "host_name": "dl.acm.org",
+    "rank": 0,
+    "date": "Jul 8, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.researchgate.net",
+    "name": "(PDF) Patch Overfitting in Program Repair: A Survey",
+    "snippet": "Oct 18, 2024 — In this article, we provide a comprehensive overview and catalog of APR studies and techniques, and discuss the primary concerns and approaches ... Read more",
+    "host_name": "www.researchgate.net",
+    "rank": 1,
+    "date": "Oct 18, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://squareslab.github.io",
+    "name": "Is the Cure Worse Than the Disease? Overfitting in",
+    "snippet": "by EK Smith · Cited by 486 — Using human-generated, requirements-based test suites to guide automated repair leads to higher quality patches than using auto- matically generated test suites ... Read more 12 pages",
+    "host_name": "squareslab.github.io",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://purls.library.ucf.edu",
+    "name": "Test Overfitting in Automated Program Repair",
+    "snippet": "by A Nilizadeh · 2021 — Test overfitting means the repaired program is not correct based on the program's expected behav- loop needs its invariants to be verified.",
+    "host_name": "purls.library.ucf.edu",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.emergentmind.com",
+    "name": "Automated Program Repair",
+    "snippet": "Dec 16, 2025 — Automated Program Repair (APR ) is the automatic correction of software defects using techniques like test suites or formal specifications to ... Read more",
+    "host_name": "www.emergentmind.com",
+    "rank": 4,
+    "date": "Dec 16, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org",
+    "name": "When Automated Program Repair Meets Regression Testing",
+    "snippet": "Jul 2, 2024 — A typical test-based APR system takes a buggy program and its test suite (with at least one failed test) as inputs, and consists of three phases ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 5,
+    "date": "Jul 2, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://people.cs.umass.edu",
+    "name": "Is the Cure Worse Than the Disease? Overfitting in",
+    "snippet": "by EK Smith · Cited by 486 — Using human-generated, requirements-based test suites to guide automated repair leads to higher quality patches than using auto- matically generated test suites ... Read more 12 pages",
+    "host_name": "people.cs.umass.edu",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.cs.purdue.edu",
+    "name": "When Automated Program Repair Meets Regression Testing",
+    "snippet": "by Y LOU · 2024 · Cited by 8 — Our study reveals various practical guidelines for bridging the gap between APR and regression testing , 23 pages",
+    "host_name": "www.cs.purdue.edu",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://link.springer.com",
+    "name": "Advancements in automated program repair - Springer Nature",
+    "snippet": "by S Dikici · 2025 · Cited by 28 — This review paper presents a comprehensive examination of automated program repair (APR ) and its significant contribution to the field of ... Read more",
+    "host_name": "link.springer.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  }
+]

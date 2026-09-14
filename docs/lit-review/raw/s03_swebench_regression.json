@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://arxiv.org",
+    "name": "Are “Solved Issues” in SWE-bench Really Solved Correctly",
+    "snippet": "SWE-bench evaluates the generated patch by running tests associated with the issue, including at least one fail-to-pass test to confirm the issue is resolved,",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog-en.fltech.dev",
+    "name": "Achieving SLM SOTA 74.8% on SWE-bench Verified with a",
+    "snippet": "Apr 8, 2026 — Official evaluation uses FAIL_TO_PASS tests to check whether the issue is resolved and PASS_TO_PASS tests to check for regressions . A problem ... Read more",
+    "host_name": "blog-en.fltech.dev",
+    "rank": 1,
+    "date": "Apr 8, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.emergentmind.com",
+    "name": "SWE-Bench: Real-World Software Benchmark",
+    "snippet": "Sep 30, 2025 — SWE-Bench is a repository-level benchmark evaluating language models on real-world Python GitHub issues by requiring multi-file patching and ...",
+    "host_name": "www.emergentmind.com",
+    "rank": 2,
+    "date": "Sep 30, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://openreview.net",
+    "name": "ENHANCED CODING BENCHMARK FOR LLMS",
+    "snippet": "by R Aleithan · Cited by 126 — SWE - bench aka Software Engineering Benchmark dataset is created to systematically evaluate the capabilities of an LLM in resolving software issues.",
+    "host_name": "openreview.net",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://forum.devtalk.com",
+    "name": "SWE-Bench+: Enhanced Coding Benchmark for LLMs",
+    "snippet": "Feb 28, 2025 — To facilitate a rigorous evaluation of LLMs in practical coding contexts, Carlos et al. introduced the SWE - bench dataset, which comprises ... Read more",
+    "host_name": "forum.devtalk.com",
+    "rank": 4,
+    "date": "Feb 28, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://dl.acm.org",
+    "name": "Are “Solved Issues” in SWE-bench Really Solved Correctly",
+    "snippet": "2 days ago — SWE-bench evaluates the generated patch by running tests associated with the issue, including at least one fail-to-pass test to confirm the ... Read more",
+    "host_name": "dl.acm.org",
+    "rank": 5,
+    "date": "Sep 12, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.swebench.com",
+    "name": "Evaluation Guide",
+    "snippet": "SWE - bench evaluates models by applying their generated patches to real-world repositories and running the repository's tests to verify if the issue is resolved. Read more",
+    "host_name": "www.swebench.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dspacemainprd01.lib.uwaterloo.ca",
+    "name": "SWE-bench-secret: Automating AI Agent Evaluation for",
+    "snippet": "by G Kio · 2025 · Cited by 1 — ACR offers broader coverage but with greater regressions , while SWE -Agent shows higher regression severity despite generating fewer patches . These findings ... Read more",
+    "host_name": "dspacemainprd01.lib.uwaterloo.ca",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

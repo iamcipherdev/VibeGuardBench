@@ -1,0 +1,96 @@
+% ---------- threats, reproducibility, ethics, limitations, future work, conclusion ----------
+\section{Threats to Validity}
+
+\paragraph{Internal validity.} Repair outcomes may depend on builder-side behavior we
+cannot observe or control: hidden repair logic, server-side model selection, and
+rate-limit-driven truncation. We log everything observable (platform version, tier,
+dates, exposed model disclosures) and report what cannot be pinned down as unknown
+rather than assuming it neutral. Feedback order and phrasing are frozen; the operator
+may not rephrase. State pollution across suite executions is mitigated by a logged
+database reset step. Scanner false positives are handled by manual verification plus a
+sensitivity analysis rather than by silent exclusion.
+
+\paragraph{Construct validity.} Check outcomes are proxies. ``Passing'' a functional
+check means the behavior holds under the contract's fixed probes, not that the
+application is correct in general; a security check failing means a scanner or probe
+fired, not that an exploitable vulnerability exists. The regression construct is
+conservative by design: only previously passing checks that later fail count, and the
+whole-suite rule makes the measurement of that set explicit. Denominator choices are
+frozen before analysis, with raw counts always reported, because rate metrics with
+small or shifting denominators are easy to overstate.
+
+\paragraph{External validity.} Two builders, three tasks, and one operator bound
+generalization. The findings will concern the studied systems under the studied
+contracts; they will not license claims about all AI coding tools, about models, or
+about production software. The interface contracts constrain design freedom, which
+may suppress diversity in how builders fail; the counter-argument---that
+contract adherence is itself a property worth measuring---does not remove the threat,
+so we report it rather than argue it away.
+
+\paragraph{Conclusion validity.} With 18 applications and up to four measured
+iterations per application, the design supports cluster-bootstrapped interval
+estimates and cautious model-based inference; it does not support powered claims of
+builder equivalence or superiority. Category-level cells may be thin (some categories
+contain fewer than ten eligible checks per application); small-denominator flags and
+the sensitivity analyses exist for exactly this reason.
+
+\section{Reproducibility}
+
+The repository ships everything needed to re-run or extend the study: frozen
+specifications and prompts; the check catalog with per-check feedback templates; the
+oracle implementations (Playwright suites, the runtime probe engine, the Semgrep
+ruleset, the ESLint configuration); the runner and feedback generator; JSON schemas
+for run records and check results; the ledger and analysis scripts; and the
+literature-search log with machine-readable citation-verification records. Every
+suite execution writes a schema-validated run record with environment versions, raw
+tool output, operator interventions, and retries. Generated application sources are
+archived per iteration, with any generated secrets redacted in public archives and
+redactions logged. A researcher starting from the repository README can execute the
+oracle suite against any exported application without access to the authors; the
+operator runbook documents the human steps for the builder-facing phases. Because
+the commercial builders are external services, exact reproduction of \emph{builder
+behavior} is not possible---platform versions change---which is a property of the
+subject matter, documented rather than hidden.
+
+\section{Ethical Considerations}
+
+The study involves no human subjects and collects no personal data. Generated
+applications run only in a local pinned environment; nothing is deployed publicly.
+Security findings in generated applications are reported as study measurements;
+findings that appear to implicate a builder platform itself (rather than the
+generated application) would be disclosed to the vendor before publication. The
+study's public artifacts may contain generated hard-coded credentials; these are
+redacted with an auditable log. The single-operator design creates a potential for
+unconscious bias in favor of the protocol; the preregistration-style freeze, logged
+operator interventions, and machine-generated feedback exist to keep that bias
+checkable rather than to deny its possibility.
+
+\section{Limitations}
+
+Beyond the threats above, three limitations are inherent to the design. First,
+iteration~0 already includes the frozen specification, so the study measures repair
+of specification-conditioned applications, not of arbitrary prompts. Second, the
+maximum of three repair iterations bounds trajectory claims; behavior at iteration
+five or ten is out of scope. Third, the builder market moves quickly: platform
+versions will drift during data collection, and the run records are the only
+reliable account of which version produced which artifact.
+
+\section{Future Work}
+
+Three extensions follow naturally. A larger builder panel with metered API access
+would convert RQ5 into a powered comparison. Feedback-ablation arms---bare failure
+messages versus located diagnostics versus specification excerpts---would test which
+feedback components drive repair, replacing the fixed feedback of this protocol. And
+the same oracle suite applied to human-authored starter codebases would separate
+``repair of AI-generated code'' from ``repair of this kind of application,'' a
+confound this within-generated design cannot address.
+
+\section{Conclusion}
+
+Whether AI application builders can repair their own output without breaking what
+already works is a concrete, measurable, and practically important question, and one
+that existing benchmarks do not answer. This protocol fixes the specifications,
+oracles, feedback mechanism, metrics, and analysis plan needed to answer it for two
+commercial builders and three bounded applications, before any data is collected.
+The repository accompanying this document is the protocol: running its harness
+against exported applications is the study.

@@ -1,0 +1,88 @@
+{
+  "n_applications": 1,
+  "n_transitions": 2,
+  "pooled_primary": {
+    "repair_success_rate": {
+      "ratio": 0.030303030303030304,
+      "num": 1,
+      "den": 33
+    },
+    "regression_rate": {
+      "ratio": 0.02702702702702703,
+      "num": 1,
+      "den": 37
+    }
+  },
+  "pooled_secondary_fixed_denominator": {
+    "repair_success_rate": {
+      "ratio": 0.030303030303030304,
+      "num": 1,
+      "den": 33
+    },
+    "regression_rate": {
+      "ratio": 0.02702702702702703,
+      "num": 1,
+      "den": 37
+    }
+  },
+  "transitions": [
+    {
+      "task": "APP-01",
+      "builder": "PILOTGLM",
+      "repetition": 1,
+      "from_iter": 0,
+      "to_iter": 1,
+      "n_targets_eligible": 16,
+      "n_repaired": 0,
+      "n_passing_eligible": 19,
+      "n_regressed": 1,
+      "rsr": 0.0,
+      "rr": 0.05263157894736842,
+      "nqc": -1,
+      "n_targets_fixed": 16,
+      "n_passing_fixed": 19,
+      "rsr_fixed_denominator": 0.0,
+      "rr_fixed_denominator": 0.05263157894736842,
+      "unresolved_at_k_plus_1": {
+        "na": 0,
+        "env-error": 0,
+        "missing": 0
+      },
+      "small_denominator_target": false,
+      "small_denominator_passing": false,
+      "repaired_ids": [],
+      "regressed_ids": [
+        "SEC-005"
+      ]
+    },
+    {
+      "task": "APP-01",
+      "builder": "PILOTGLM",
+      "repetition": 1,
+      "from_iter": 1,
+      "to_iter": 2,
+      "n_targets_eligible": 17,
+      "n_repaired": 1,
+      "n_passing_eligible": 18,
+      "n_regressed": 0,
+      "rsr": 0.058823529411764705,
+      "rr": 0.0,
+      "nqc": 1,
+      "n_targets_fixed": 17,
+      "n_passing_fixed": 18,
+      "rsr_fixed_denominator": 0.058823529411764705,
+      "rr_fixed_denominator": 0.0,
+      "unresolved_at_k_plus_1": {
+        "na": 0,
+        "env-error": 0,
+        "missing": 0
+      },
+      "small_denominator_target": false,
+      "small_denominator_passing": false,
+      "repaired_ids": [
+        "SEC-005"
+      ],
+      "regressed_ids": []
+    }
+  ]
+}

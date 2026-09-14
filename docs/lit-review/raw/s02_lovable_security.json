@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://aithinkerlab.com",
+    "name": "Lovable AI Security Vulnerabilities: 16 Flaws From 30 Days of",
+    "snippet": "After weeks of testing across multiple generated applications , I catalogued 16 distinct security vulnerabilities in Lovable AI - generated code. Read more",
+    "host_name": "aithinkerlab.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.ox.security",
+    "name": "Are AI App Builders Secure? We Tested Lovable, Base44,",
+    "snippet": "We tested Lovable , Base44, and Bolt to analyze their security . Download our eBook to discover critical vulnerability risks and AI code security findings.",
+    "host_name": "www.ox.security",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://vibeappscanner.com",
+    "name": "Is Lovable Safe to Use? (2026): CVE-2025-48757, RLS",
+    "snippet": "Apr 20, 2026 — The most common security issues in Lovable applications stem from misconfigurations, exposed credentials, and missing security controls, ... Read more",
+    "host_name": "vibeappscanner.com",
+    "rank": 2,
+    "date": "Apr 20, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.lovable.dev",
+    "name": "Security overview",
+    "snippet": "Lovable helps reduce common application security risks during development and before publishing. identifying potential vulnerabilities through automated  ...",
+    "host_name": "docs.lovable.dev",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "task": "APP-02",
+  "roles": {
+    "viewer": {"email": "viewer@vgb.local", "password": "viewer-pass-1"},
+    "member": {"email": "member@vgb.local", "password": "member-pass-2"},
+    "admin": {"email": "admin@vgb.local", "password": "admin-pass-9"}
+  },
+  "protected_paths": ["/projects", "/admin", "/api/projects", "/api/admin/users"],
+  "allowed_paths": {
+    "member": "/api/projects",
+    "admin": "/api/admin/users"
+  },
+  "deny_matrix_api": [
+    {"role": "viewer", "method": "POST", "path": "/api/projects/1/tasks", "body": {"title": "nope", "status": "todo"}},
+    {"role": "member", "method": "GET", "path": "/api/admin/users"},
+    {"role": "member", "method": "DELETE", "path": "/api/tasks/{crossOwnerId}"}
+  ],
+  "cross_owner_setup": {
+    "owner_role": "admin",
+    "method": "POST",
+    "path": "/api/projects/1/tasks",
+    "body": {"title": "cross-owner probe task", "status": "todo"},
+    "id_field": "id"
+  },
+  "persistence_role": "member",
+  "persistence_create": {
+    "method": "POST",
+    "path": "/api/projects/1/tasks",
+    "body": {"title": "persistence probe {marker}", "status": "todo"},
+    "entity": "task",
+    "id_field": "id",
+    "list_path": "/api/projects/1/tasks",
+    "list_field": "tasks",
+    "match_field": "id",
+    "schema": {"id": "int", "title": "string", "status": "string", "projectId": "int"}
+  },
+  "persistence_update": {
+    "method": "PATCH",
+    "path": "/api/tasks/{id}",
+    "body": {"status": "done"},
+    "expect": {"status": "done"}
+  },
+  "persistence_delete": {"path": "/api/tasks/{id}"}
+}

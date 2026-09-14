@@ -1,0 +1,1 @@
+[{"filePath":"/home/z/my-project/VibeGuardBench/pilot/app-r1-i000/server.js","messages":[],"suppressedMessages":[],"errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":[]}]

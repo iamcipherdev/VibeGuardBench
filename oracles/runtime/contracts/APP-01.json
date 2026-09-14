@@ -1,0 +1,37 @@
+{
+  "task": "APP-01",
+  "roles": {
+    "patient": {"email": "patient@vgb.local", "password": "patient-pass-1"},
+    "admin": {"email": "admin@vgb.local", "password": "admin-pass-9"}
+  },
+  "protected_paths": ["/appointments", "/admin", "/api/appointments", "/api/admin/stats"],
+  "allowed_paths": {
+    "patient": "/api/appointments",
+    "admin": "/api/admin/stats"
+  },
+  "deny_matrix_api": [
+    {"role": "patient", "method": "GET", "path": "/api/admin/stats"},
+    {"role": "patient", "method": "DELETE", "path": "/api/appointments/{crossOwnerId}"}
+  ],
+  "cross_owner_setup": {
+    "owner_role": "admin",
+    "method": "POST",
+    "path": "/api/appointments",
+    "body": {"date": "2031-01-01", "time": "09:00", "reason": "cross-owner probe"},
+    "id_field": "id"
+  },
+  "persistence_role": "patient",
+  "persistence_create": {
+    "method": "POST",
+    "path": "/api/appointments",
+    "body": {"date": "2031-02-02", "time": "10:30", "reason": "persistence probe {marker}"},
+    "entity": "appointment",
+    "id_field": "id",
+    "list_path": "/api/appointments",
+    "list_field": "appointments",
+    "match_field": "id",
+    "schema": {"id": "int", "date": "date", "time": "time", "reason": "string", "patient": "string"}
+  },
+  "persistence_update": null,
+  "persistence_delete": {"path": "/api/appointments/{id}"}
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://github.com",
+    "name": "dequelabs/axe-core: Accessibility engine for automated",
+    "snippet": "Axe is an accessibility testing engine for websites and other HTML-based user interfaces. It's fast, secure, lightweight, and was built to seamlessly integrate",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://club.ministryoftesting.com",
+    "name": "Day 16: Evaluate adopting AI for accessibility testing and",
+    "snippet": "Mar 16, 2024 — Axe Core itself is an automated accessibility testing library , its enterprise edition offers some AI-driven features for identifying and ...",
+    "host_name": "club.ministryoftesting.com",
+    "rank": 1,
+    "date": "Mar 16, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.deque.com",
+    "name": "Axe Platform | Full suite of accessibility testing tools",
+    "snippet": "Create truly inclusive websites, mobile apps and web content with axe accessibility testing tools . Inclusive experiences are better experiences.",
+    "host_name": "www.deque.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.w3.org",
+    "name": "Web Accessibility Evaluation Tools List",
+    "snippet": "With axe DevTools for Web CLI, organizations can automate accessibility testing without having to integrate axe into integration or end-to-end tests.",
+    "host_name": "www.w3.org",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dev.to",
+    "name": "Automated Accessibility Testing: axe-core, Keyboard",
+    "snippet": "Jun 22, 2026 — axe-core is the engine behind most accessibility tooling . It is excellent at the rule-based checks: contrast, names, roles, ARIA misuse. The ... Read more",
+    "host_name": "dev.to",
+    "rank": 4,
+    "date": "Jun 22, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.bolajiayodeji.com",
+    "name": "Accessibility Auditing with Axe for automated Web UI testing",
+    "snippet": "Aug 22, 2023 — One important feature of Axe is that it works with all modern browsers, tools, CLI, and testing environments, allowing you to check for ... Read more",
+    "host_name": "blog.bolajiayodeji.com",
+    "rank": 5,
+    "date": "Aug 22, 2023",
+    "favicon": ""
+  }
+]

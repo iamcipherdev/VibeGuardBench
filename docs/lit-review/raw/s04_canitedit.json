@@ -1,0 +1,83 @@
+[
+  {
+    "url": "https://arxiv.org",
+    "name": "Can It Edit? Evaluating the Ability of Large Language",
+    "snippet": "Sep 23, 2024 — CanItEdit serves as a benchmark for evaluating state-of-the-art Code LLMs in instructional code editing. Our evaluation focuses on measuring ...",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "Sep 23, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com",
+    "name": "nuprl/CanItEdit: Can It Edit? Evaluating the Ability of Large",
+    "snippet": "CanItEdit is a benchmark for evaluating LLMs on instructional code editing , the task of updating a program given a natural language instruction. Read more",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openreview.net",
+    "name": "Can It Edit? Evaluating the Ability of Large Language",
+    "snippet": "by F Cassano · Cited by 74 — The paper proposes a novel benchmark called CANITEDIT , which is designed to evaluate the instructional code editing skills of Code LLMs.",
+    "host_name": "openreview.net",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "http://www.khoury.northeastern.edu",
+    "name": "Can It Edit? Evaluating the Ability of Large Language",
+    "snippet": "We introduce a carefully crafted benchmark of code editing tasks and use it evaluate several cutting edge LLMs. 8.8% better than the best open model at editing ...",
+    "host_name": "www.khoury.northeastern.edu",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.alphaxiv.org",
+    "name": "EDIT-Bench: Evaluating LLM Abilities to Perform Real-",
+    "snippet": "Nov 17, 2025 — EDIT-BENCH introduces a new benchmark for evaluating Large Language Models (LLMs ) on instructed code editing tasks using real-world user data. Read more",
+    "host_name": "www.alphaxiv.org",
+    "rank": 4,
+    "date": "Nov 17, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.semanticscholar.org",
+    "name": "[PDF] Can It Edit? Evaluating the Ability of Large Language",
+    "snippet": "This work introduces a carefully crafted benchmark of code editing tasks and uses it to evaluate several cutting edge LLMs, and shows that it can fine-tune ...",
+    "host_name": "www.semanticscholar.org",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://proceedings.iclr.cc",
+    "name": "EDIT-BENCH: EVALUATING LLM ABILITIES TO PER",
+    "snippet": "by W Chi · 2026 · Cited by 10 — We introduce EDIT-Bench, a benchmark for evaluating LLM code editing capabilities built on real-world edit contexts and instructions (Figure 1). We source ... Read more",
+    "host_name": "proceedings.iclr.cc",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://tldr.takara.ai",
+    "name": "Can It Edit? Evaluating the Ability of Large Language Models",
+    "snippet": "We introduce a carefully crafted benchmark of code editing tasks and use it to evaluate several cutting edge LLMs. Our evaluation exposes a significant gap ... Read more",
+    "host_name": "tldr.takara.ai",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co",
+    "name": "Can It Edit? Evaluating the Ability of Large Language",
+    "snippet": "Dec 10, 2023 — We introduce a carefully crafted benchmark of code editing tasks and use it evaluate several cutting edge LLMs. Our evaluation exposes a ... Read more",
+    "host_name": "huggingface.co",
+    "rank": 8,
+    "date": "Dec 10, 2023",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://arxiv.org",
+    "name": "FullStack Bench: Evaluating LLMs as Full Stack Coders",
+    "snippet": "May 12, 2025 — FullStack Bench , an evaluation set spanning multiple computer science domains and programming languages, which aims to assess large models' ...",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "May 12, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.evidentlyai.com",
+    "name": "30 LLM evaluation benchmarks and how they work",
+    "snippet": "LLM benchmarks are standardized tests for LLM evaluations . This guide covers 30 benchmarks from MMLU to Chatbot Arena, with links to datasets and ...",
+    "host_name": "www.evidentlyai.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://mbrenndoerfer.com",
+    "name": "HumanEval: Functional Code Generation Evaluation with",
+    "snippet": "Mar 2, 2026 — Explains how HumanEval evaluates LLM code generation using functional correctness and the pass@k metric.",
+    "host_name": "mbrenndoerfer.com",
+    "rank": 2,
+    "date": "Mar 2, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.confident-ai.com",
+    "name": "12 Best AI Evaluation Tools for Testing & Improving",
+    "snippet": "Jul 28, 2026 — A comprehensive comparison of the 12 most relevant AI evaluation tools — platforms, open-source frameworks, and hybrid solutions — ranked by ...",
+    "host_name": "www.confident-ai.com",
+    "rank": 3,
+    "date": "Jul 28, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://dl.acm.org",
+    "name": "Benchmarking LLMs for Unit Test Generation from Real-",
+    "snippet": "ULT (UnLeakedTestbench), a new benchmark specifically designed for function -level unit test generation from real-world Python functions.",
+    "host_name": "dl.acm.org",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arize.com",
+    "name": "40 Large Language Model Benchmarks and The Future of",
+    "snippet": "This blog will discuss some of the most popular LLM benchmarks for evaluating top models like GPT 4o, Gemma 3, or Claude.",
+    "host_name": "arize.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://symflower.com",
+    "name": "Benchmarks evaluating LLM agents for software",
+    "snippet": "May 12, 2025 — This post provides an overview of the most useful benchmarks for evaluating LLM code generation agents and agentic software development ... Read more",
+    "host_name": "symflower.com",
+    "rank": 6,
+    "date": "May 12, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.openlayer.com",
+    "name": "LLM coding benchmarks: A complete guide for March 2026",
+    "snippet": "Mar 27, 2026 — How HumanEval, SWE-bench, and LiveCodeBench measure LLM coding performance for real-world development tasks.",
+    "host_name": "www.openlayer.com",
+    "rank": 7,
+    "date": "Mar 27, 2026",
+    "favicon": ""
+  }
+]

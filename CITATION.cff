@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "Safeguard Effectiveness in Vibe Coding: An Empirical Evaluation of Test-Guided Repair and Regression in AI-Generated Full-Stack Web Applications (Research Protocol — Study in Progress)"
+message: >-
+  Preregistered research protocol and benchmark harness. No experimental
+  results are reported; the commercial-builder study is in progress.
+type: software
+authors:
+  - family-names: Shah
+    given-names: "Sayed Ali Haider"
+    alias: Cipher
+    website: https://github.com/iamcipherdev
+repository-code: "https://github.com/iamcipherdev/VibeGuardBench"
+version: v1.0.2
+date-released: "2026-09-14"
+license: MIT
+keywords:
+  - vibe-coding
+  - empirical-software-engineering
+  - program-repair
+  - regression-testing
+  - benchmark
+  - application-security
+  - accessibility
+  - reproducible-research

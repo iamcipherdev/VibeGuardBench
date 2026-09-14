@@ -1,0 +1,136 @@
+run_id,task,builder,repetition,iteration,check_id,category,outcome,observed,expected,detail
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,BUILD-001,BUILD,pass,exit 0,exit 0,"sions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn allow-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn allow-scripts   bcrypt@5.1.1 (install: node-pre-gyp install --fallback-to-build)
+npm warn allow-scripts   better-sqlite3@11.10.0 (install: prebuild-install || node-gyp rebuild --release)
+npm warn allow-scripts
+npm warn allow-scripts Run `npm approve-scripts --allow-scripts-pending` to review, or `npm approve-scripts <pkg>` to allow.
+"
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,BUILD-002,BUILD,na,,,no build script declared
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,TYPE-001,TYPE,na,,,not a TypeScript project
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,LINT-001,LINT,pass,0 errors,0 errors,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,LINT-002,LINT,pass,0 warnings,0 warnings,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,SEC-001,SEC,pass,0 findings,0 findings,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,SEC-002,SEC,pass,0 secret-pattern hits,0,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,SEC-003,SEC,fail,2 high/critical,0 high/critical,"{""info"": 0, ""low"": 0, ""moderate"": 2, ""high"": 1, ""critical"": 1, ""total"": 4}"
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,BUILD-003,BUILD,pass,ok,reachable on $PORT,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,BUILD-004,BUILD,fail,GET / -> 404,200 (or redirect to app UI),
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,SEC-004,SEC,pass,none open,none,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,FUNC-001,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,FUNC-002,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,FUNC-003,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,FUNC-004,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,FUNC-005,FUNC,na,,,not applicable to this task contract
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,FUNC-006,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,FUNC-007,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,FUNC-008,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,FUNC-009,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,FUNC-010,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,FUNC-011,FUNC,pass,,,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,AUTHZ-004,AUTHZ,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,A11Y-001,A11Y,pass,,,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,A11Y-002,A11Y,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,A11Y-003,A11Y,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,A11Y-004,A11Y,pass,,,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,BUILD-005,BUILD,pass,clean,no fatal startup errors,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,AUTHZ-001,AUTHZ,pass,all denied,401/403/redirect on all protected paths,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,AUTHZ-002,AUTHZ,pass,all 200,200 for allowed role/path pairs,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,AUTHZ-003,AUTHZ,pass,all 403,403 for every deny-matrix probe,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,AUTHZ-005,AUTHZ,pass,all 403,403 for disallowed-role API writes,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,AUTHZ-006,AUTHZ,fail,still 200 on /api/appointments after logout,protected path not 200 after logout,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,SEC-005,SEC,pass,localStorage token storage: none,no token in localStorage,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,DB-004,DB,fail,"got {""id"":3,""date"":""2031-02-02"",""time"":""10:30"",""reason"":""persistence probe vgb-1789354062188-146630"",""patient_id"":2,""patient_email"":""patient@vgb.local""}","create response matches contract shape: {""id"":""int"",""date"":""date"",""time"":""time"",""reason"":""string"",""patient"":""string""}",
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,DB-001,DB,pass,present,created record present after restart,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,DB-002,DB,na,,,no update probe in contract
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,DB-003,DB,pass,absent,record absent after restart,
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,SEC-006,SEC,pass,"password hashing library detected, no plaintext found",hashing present,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,BUILD-001,BUILD,pass,exit 0,exit 0,"sions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn allow-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn allow-scripts   bcrypt@5.1.1 (install: node-pre-gyp install --fallback-to-build)
+npm warn allow-scripts   better-sqlite3@11.10.0 (install: prebuild-install || node-gyp rebuild --release)
+npm warn allow-scripts
+npm warn allow-scripts Run `npm approve-scripts --allow-scripts-pending` to review, or `npm approve-scripts <pkg>` to allow.
+"
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,BUILD-002,BUILD,na,,,no build script declared
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,TYPE-001,TYPE,na,,,not a TypeScript project
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,LINT-001,LINT,pass,0 errors,0 errors,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,LINT-002,LINT,pass,0 warnings,0 warnings,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,SEC-001,SEC,pass,0 findings,0 findings,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,SEC-002,SEC,pass,0 secret-pattern hits,0,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,SEC-003,SEC,fail,2 high/critical,0 high/critical,"{""info"": 0, ""low"": 0, ""moderate"": 2, ""high"": 1, ""critical"": 1, ""total"": 4}"
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,BUILD-003,BUILD,pass,ok,reachable on $PORT,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,BUILD-004,BUILD,fail,GET / -> 404,200 (or redirect to app UI),
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,SEC-004,SEC,pass,none open,none,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,FUNC-001,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,FUNC-002,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,FUNC-003,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,FUNC-004,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,FUNC-005,FUNC,na,,,not applicable to this task contract
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,FUNC-006,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,FUNC-007,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,FUNC-008,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,FUNC-009,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,FUNC-010,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,FUNC-011,FUNC,pass,,,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,AUTHZ-004,AUTHZ,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,A11Y-001,A11Y,pass,,,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,A11Y-002,A11Y,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,A11Y-003,A11Y,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,A11Y-004,A11Y,pass,,,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,BUILD-005,BUILD,pass,clean,no fatal startup errors,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,AUTHZ-001,AUTHZ,pass,all denied,401/403/redirect on all protected paths,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,AUTHZ-002,AUTHZ,pass,all 200,200 for allowed role/path pairs,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,AUTHZ-003,AUTHZ,pass,all 403,403 for every deny-matrix probe,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,AUTHZ-005,AUTHZ,pass,all 403,403 for disallowed-role API writes,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,AUTHZ-006,AUTHZ,fail,still 200 on /api/appointments after logout,protected path not 200 after logout,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,SEC-005,SEC,fail,token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJwYXRpZW50QHZnYi5sb2NhbCIsInJvbGUiOiJwYXRpZW50IiwiaWF0IjoxNzg5MzU0MjY0fQ.DojRAXWhFY9_qG30Lm5-xtTXswOb2ec3nwa2vaeU39k; Path=/; HttpOnly,HttpOnly and SameSite on session cookie,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,DB-004,DB,fail,"got {""id"":3,""date"":""2031-02-02"",""time"":""10:30"",""reason"":""persistence probe vgb-1789354264580-61522"",""patient_id"":2,""patient_email"":""patient@vgb.local""}","create response matches contract shape: {""id"":""int"",""date"":""date"",""time"":""time"",""reason"":""string"",""patient"":""string""}",
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,DB-001,DB,pass,present,created record present after restart,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,DB-002,DB,na,,,no update probe in contract
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,DB-003,DB,pass,absent,record absent after restart,
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,SEC-006,SEC,pass,"password hashing library detected, no plaintext found",hashing present,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,BUILD-001,BUILD,pass,exit 0,exit 0,"sions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn allow-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn allow-scripts   bcrypt@5.1.1 (install: node-pre-gyp install --fallback-to-build)
+npm warn allow-scripts   better-sqlite3@11.10.0 (install: prebuild-install || node-gyp rebuild --release)
+npm warn allow-scripts
+npm warn allow-scripts Run `npm approve-scripts --allow-scripts-pending` to review, or `npm approve-scripts <pkg>` to allow.
+"
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,BUILD-002,BUILD,na,,,no build script declared
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,TYPE-001,TYPE,na,,,not a TypeScript project
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,LINT-001,LINT,pass,0 errors,0 errors,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,LINT-002,LINT,pass,0 warnings,0 warnings,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,SEC-001,SEC,pass,0 findings,0 findings,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,SEC-002,SEC,pass,0 secret-pattern hits,0,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,SEC-003,SEC,fail,2 high/critical,0 high/critical,"{""info"": 0, ""low"": 0, ""moderate"": 2, ""high"": 1, ""critical"": 1, ""total"": 4}"
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,BUILD-003,BUILD,pass,ok,reachable on $PORT,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,BUILD-004,BUILD,fail,GET / -> 404,200 (or redirect to app UI),
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,SEC-004,SEC,pass,none open,none,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,FUNC-001,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,FUNC-002,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,FUNC-003,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,FUNC-004,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,FUNC-005,FUNC,na,,,not applicable to this task contract
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,FUNC-006,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,FUNC-007,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,FUNC-008,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,FUNC-009,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,FUNC-010,FUNC,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,FUNC-011,FUNC,pass,,,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,AUTHZ-004,AUTHZ,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,A11Y-001,A11Y,pass,,,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,A11Y-002,A11Y,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,A11Y-003,A11Y,fail,TimeoutError: locator.fill: Timeout 8000ms exceeded.,,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,A11Y-004,A11Y,pass,,,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,BUILD-005,BUILD,pass,clean,no fatal startup errors,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,AUTHZ-001,AUTHZ,pass,all denied,401/403/redirect on all protected paths,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,AUTHZ-002,AUTHZ,pass,all 200,200 for allowed role/path pairs,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,AUTHZ-003,AUTHZ,pass,all 403,403 for every deny-matrix probe,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,AUTHZ-005,AUTHZ,pass,all 403,403 for disallowed-role API writes,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,AUTHZ-006,AUTHZ,fail,still 200 on /api/appointments after logout,protected path not 200 after logout,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,SEC-005,SEC,pass,flags present,HttpOnly and SameSite on session cookie,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,DB-004,DB,fail,"got {""id"":3,""date"":""2031-02-02"",""time"":""10:30"",""reason"":""persistence probe vgb-1789354463573-99259"",""patient_id"":2,""patient_email"":""patient@vgb.local""}","create response matches contract shape: {""id"":""int"",""date"":""date"",""time"":""time"",""reason"":""string"",""patient"":""string""}",
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,DB-001,DB,pass,present,created record present after restart,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,DB-002,DB,na,,,no update probe in contract
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,DB-003,DB,pass,absent,record absent after restart,
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,SEC-006,SEC,pass,"password hashing library detected, no plaintext found",hashing present,

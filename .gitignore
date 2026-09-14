@@ -1,0 +1,28 @@
+# dependencies / builds
+node_modules/
+dist/
+build/
+.next/
+coverage/
+__pycache__/
+*.pyc
+.venv/
+
+# pilot app artifacts (large; raw sources archived per protocol in data/)
+pilot/app-r1-*/
+pilot/node_modules/
+pilot/package-lock.json
+pilot/last-response-debug.txt
+
+# application databases (never commit generated data)
+*.sqlite
+*.sqlite3
+*.db
+
+# generated app archives (research data is archived per iteration, not in git LFS-less)
+generated-apps/*
+!generated-apps/README.md
+
+# OS / editor
+.DS_Store
+*.swp

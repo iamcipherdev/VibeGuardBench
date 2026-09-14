@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://arxiv.org",
+    "name": "DevBench: A Comprehensive Benchmark for Software",
+    "snippet": "Mar 13, 2024 — DevBench , a comprehensive benchmark that evaluates LLMs across various stages of the software development lifecycle , including software design, ...",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "Mar 13, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com",
+    "name": "open-compass/DevEval - DevBench",
+    "snippet": "DevBench is a comprehensive benchmark designed to evaluate LLMs across various stages of the software development lifecycle , including software design, ... Read more",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.semanticscholar.org",
+    "name": "A Comprehensive Benchmark for Software Development",
+    "snippet": "DevBench is proposed, a comprehensive benchmark that evaluates LLMs across various stages of the software development lifecycle , including software design, ...",
+    "host_name": "www.semanticscholar.org",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openreview.net",
+    "name": "DevBench: A Realistic, Developer-Informed Benchmark for",
+    "snippet": "by PA Golnari · Cited by 7 — DevBench is a telemetry-driven benchmark designed to evaluate Large Language Models (LLMs ) on realistic code completion tasks.",
+    "host_name": "openreview.net",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ai.plainenglish.io",
+    "name": "Assessing the Software Development Prowess of LLM",
+    "snippet": "Apr 27, 2024 — DevBench , a comprehensive benchmark designed to evaluate LLMs across the entire software development lifecycle.",
+    "host_name": "ai.plainenglish.io",
+    "rank": 4,
+    "date": "Apr 27, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://daily.dev",
+    "name": "Assessing the Software Development Prowess of LLM",
+    "snippet": "May 7, 2024 — DevBench is a benchmark designed to evaluate the capabilities of large language models (LLMs) in software development . Read more",
+    "host_name": "daily.dev",
+    "rank": 5,
+    "date": "May 7, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.alphaxiv.org",
+    "name": "DevBench: A Realistic, Developer-Informed Benchmark for",
+    "snippet": "May 16, 2026 — DevBench is a telemetry-driven benchmark designed to evaluate Large Language Models (LLMs ) on realistic code completion tasks. Read more",
+    "host_name": "www.alphaxiv.org",
+    "rank": 6,
+    "date": "May 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.emergentmind.com",
+    "name": "DevBench: Realistic Agent Evaluation",
+    "snippet": "Jan 21, 2026 — DevBench is a framework for systematically evaluating autonomous AI agents in dynamic, real-world environments using rigorous, multidimensional ...",
+    "host_name": "www.emergentmind.com",
+    "rank": 7,
+    "date": "Jan 21, 2026",
+    "favicon": ""
+  }
+]

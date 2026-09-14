@@ -1,0 +1,198 @@
+% ---------- study design through analysis plan ----------
+\section{Study Design}
+
+The experiment follows a factorial design with a longitudinal component at the check
+level: 3 application tasks $\times$ 2 builders $\times$ 3 independent repetitions,
+yielding 18 initial applications (iteration~0), each eligible for up to 3 repair
+iterations. Figure~\ref{tab:design} summarizes the structure.
+
+\begin{table}[tbp]
+\centering
+\caption{Design structure. Each cell contains one application per repetition; each
+application is a sequence of at most four measured suite executions (i0--i3).}
+\label{tab:design}
+\small
+\begin{tabularx}{\textwidth}{llX}
+\toprule
+Factor & Levels & Value \\
+\midrule
+Task & 3 & APP-01 booking; APP-02 dashboard; APP-03 inventory \\
+Builder & 2 & two commercial builders meeting \S4 criteria \\
+Repetition & 3 & independent generation runs per cell \\
+Repair iterations & $\leq 3$ & whole-suite re-measurement after each \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The scale is a deliberate trade-off. The statistical unit is the \emph{check
+observation} (application $\times$ iteration $\times$ check); the frozen catalog
+contains 39 checks, and per-application applicability and cascade rules yield
+roughly 20--25 eligible checks per suite execution, hence roughly 1,500--2,000
+eligible check observations across 72 suite executions and roughly 700--1,200
+transition-eligible observations. At the
+application level the sample is small, so all application-level
+aggregates are reported with cluster-aware uncertainty, and the builder comparison
+(RQ5) is treated as exploratory. Larger grids were rejected because commercial
+builder subscriptions are metered, repair loops are operator-driven, and three
+repetitions already permit within-cell variance estimation under generation
+randomness.
+
+\section{Benchmark and Application Tasks}
+
+Three bounded applications were specified, each frozen in
+\texttt{benchmark/specifications/}: an appointment booking system (two roles, CRUD,
+search, admin panel), a multi-role SaaS dashboard (three roles, project--task
+hierarchy, role-scoped API), and an ordering/inventory application (order placement
+with stock decrement, manager-only inventory administration).
+
+Each specification contains three components. First, numbered functional, security,
+accessibility, and persistence requirements written in prose precise enough to be
+checked. Second, a binding \emph{interface contract}: exact HTTP routes, request and
+response JSON shapes, seed accounts, and DOM \texttt{data-testid} attributes. The
+contract is what makes deterministic cross-implementation testing possible; builders
+retain freedom over stack, architecture, and visual design, but generated
+applications that deviate from the contract fail the affected checks, and that
+failure is a measured outcome rather than a setup error. Third, an applicability map
+to the frozen check catalog.
+
+The prescriptive contract trades ecological representativeness for measurement
+validity: freely prompted applications cannot be compared on deterministic oracles,
+because the oracles would differ per application. We record this trade-off as a
+threat in \S12 and note that it biases \emph{against} builders in the short term
+(contract violations appear as failures) while favoring measurement consistency
+across iterations.
+
+\section{Evaluation Oracles}
+
+The oracle suite contains 39 checks across eight categories
+(Table~\ref{tab:oracles}), each emitted with a frozen identifier from the check
+catalog. Suite execution is automated by a runner that installs, builds, launches,
+and probes the application, and records a schema-validated run record with raw tool
+output for every check.
+
+\begin{table}[tbp]
+\centering
+\caption{Oracle categories. Runtime categories are recorded as not applicable when
+the application cannot be started (cascade rule).}
+\label{tab:oracles}
+\setlength{\tabcolsep}{4.5pt}
+\small
+\begin{tabularx}{\textwidth}{llX}
+\toprule
+Category & Checks & Method \\
+\midrule
+BUILD & 5 & fresh \texttt{npm ci/install}; declared build; server start on \$PORT; root reachability; startup log hygiene \\
+TYPE & 1 & \texttt{tsc --noEmit} for TypeScript projects \\
+LINT & 2 & ESLint with a frozen framework-agnostic config; zero errors / zero warnings \\
+FUNC & 10--11 & Playwright (Chromium) drives the interface contract: login, logout, create, list render, edit, delete, validation, search, empty state, not-found, API rejection \\
+AUTHZ & 6 & API probes across the role $\times$ route matrix, cross-owner writes, UI denial, logout invalidation \\
+SEC & 6 & frozen Semgrep ruleset; secret-pattern scan; \texttt{npm audit} high/critical; debug-endpoint probes; cookie flags or non-localStorage tokens; credential storage \\
+A11Y & 4 & axe-core (WCAG~2.1 A/AA subset) on login, primary list, and form pages; language and title \\
+DB & 4 & create, update, delete survive full process restart; response shapes match the contract \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Three rules govern interpretation. \emph{Cascade}: when the application cannot be
+started, runtime checks are recorded as not applicable rather than failed, and the
+install/build failures carry the signal. \emph{Flakiness policy}: environment-class
+failures (browser crash, localhost timeout) are retried once and logged; test-content
+failures are never retried; during the pilot, every oracle was executed twice
+back-to-back to detect non-deterministic checks. \emph{Security caution}: scanner
+findings are candidate findings, not confirmed vulnerabilities. Every distinct
+security finding is manually inspected before analysis; a sensitivity analysis
+repeats the security results with findings judged false positives counted as passing.
+No CVSS scores are assigned and no exploitable-vulnerability claims are made from
+scanner output alone.
+
+\section{Repair Protocol}
+
+After each suite execution, a feedback generator renders one fixed-template message
+per failing check---deterministic text with the observed and expected values and a
+specification reference, e.g., \emph{``AUTHZ-003 failed: request GET /api/admin/stats
+as role `patient' returned 200; expected 403.''}---preceded by a preamble instructing
+the builder to repair without changing unrelated behavior. The operator delivers the
+feedback verbatim to the same builder session that produced the application, exports
+the resulting source, and the runner re-executes the \emph{entire} suite. The
+whole-suite rule admits no exceptions: regressions are only observable to checks that
+run, and rerunning only the failing subset would undercount them by construction.
+Iteration~0 is archived once and never overwritten; repairs may stop early only when
+no checks are failing.
+
+\section{Analysis Plan}
+
+\subsection{Metrics}
+
+Per application $a$ and transition $k \to k{+}1$, with outcome function
+$X_{a,k}(\cdot)$ over checks, let $T(a,k)=\{c: X_{a,k}(c)=\mathrm{fail}\}$ and
+$P(a,k)=\{c: X_{a,k}(c)=\mathrm{pass}\}$, excluding environment-error and
+not-applicable checks from all counts:
+\begin{align}
+\rsr(a,k) &= \frac{|\{c \in T(a,k) : X_{a,k+1}(c)=\mathrm{pass}\}|}{|T(a,k)|}, &
+\rr(a,k) &= \frac{|\{c \in P(a,k) : X_{a,k+1}(c)=\mathrm{fail}\}|}{|P(a,k)|},\\
+\nqc(a,k) &= |\text{repaired}| - |\text{regressed}|. && \nonumber
+\end{align}
+Raw counts accompany every rate; rates with fewer than five targets or five passing
+checks are flagged as small-denominator. Because checks within an application are not
+independent---a build failure cascades into every runtime check---rates are estimated
+with application-level clustering, and a sensitivity analysis repeats category-level
+comparisons after excluding cascading categories when BUILD fails at iteration $k$.
+
+\subsection{Statistical procedures}
+
+The plan is estimation-first. Descriptive trajectories per application and category
+come first; uncertainty is quantified by a cluster bootstrap over applications
+(2{,}000 replicates, percentile intervals), since checks are not independent units.
+If a model is used, two transition datasets are modeled separately---fail$\to$pass
+outcomes for RQ1 and pass$\to$fail outcomes for RQ2---with iteration $\times$
+category fixed effects and random intercepts for application and check; a GLMM is
+fitted for a transition type only if at least ten applications contribute at least
+one event of that type, otherwise bootstrap-only inference is reported, and the
+choice is stated. Two pre-declared hypothesis families---category contrasts (RQ3,
+restricted to categories with at least eight eligible checks per application:
+functionality, authorization, security, persistence) and iteration contrasts (RQ4)
+---use Benjamini--Hochberg correction within family at $\alpha=.05$; smaller
+categories (build, type, lint, accessibility) are reported descriptively. Effect
+sizes are reported as risk differences with intervals. Engineering significance is
+discussed separately from statistical significance, and no importance claim rests on
+a p-value alone. All numbers in any future results section will be regenerated by
+repository scripts from the processed dataset; none are transcribed by hand. Two
+further points bound interpretation. Each repair transition bundles all failing
+checks into a single builder action, so per-check rates estimate check-level
+behavior under bundle feedback, not independent repair events. And the primary
+estimands use transition-eligible sets (checks whose outcome is defined at both
+iterations), with the protocol-literal fixed denominators reported as a conservative
+sensitivity and an explicit exclusion ledger; the protocol changelog records this
+amendment, made pre-data, alongside every other post-review change.
+
+\section{Status of Results}
+
+No experimental data has been collected at the time of this writing. The Results
+section of the eventual manuscript does not exist yet, and this document does not
+anticipate it. The protocol, specifications, prompts, oracles, and analysis plan are
+frozen pre-data; every post-freeze change is recorded in the repository changelog,
+and the changes below were all made before data collection, in response to
+adversarial review passes.
+
+What \emph{has} been executed is a harness-validation pilot, reported here only as
+evidence that the machinery works and only under that label. The pilot generated the
+APP-01 booking application with a non-study LLM system (GLM via a programmatic SDK;
+it is not Lovable, Bolt, or Replit, and the run is excluded from all research data),
+executed the full 39-check suite, delivered machine-generated feedback for sixteen
+failures, executed a repair, re-ran the whole suite, and repeated once more. With
+the corrected harness, the measured trajectory was 19 passing / 16 failing at
+iteration~0; a repair that changed the code, repaired 0 of 16 failures, and
+regressed 1 of 19 passing checks at iteration~1 (the builder moved the session token
+into a cookie without the required security flags); and a correct repair of that
+same cookie-flags check at iteration~2 (repair success 1/17, regression rate 0/18).
+Persistent failures---missing interface attributes (which cascade into every
+UI-driven check), no root route, a stateless-token logout that does not invalidate
+sessions, a contract schema deviation, and one high and one critical dependency
+vulnerability---are plausible model behavior and demonstrate precisely the kind of
+dynamics the full study is designed to quantify. Fifteen harness defects found
+during the pilot and review passes (among them a lint configuration that produced
+spurious errors, an over-strict health check that misread redirects, orphaned server
+processes, an invalid scanner configuration, silent pass-through of dependency-audit
+failures, and cross-iteration state pollution) were fixed, and each fix is logged in
+the protocol changelog and the revision log. The pilot's purpose was to find exactly
+these defects before they could contaminate study data.

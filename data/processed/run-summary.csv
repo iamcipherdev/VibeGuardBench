@@ -1,0 +1,4 @@
+run_id,task,builder,repetition,iteration,excluded,n_checks,n_pass,n_fail,n_env_error,n_na
+APP-01-PILOTGLM-r1-i000,APP-01,PILOTGLM,1,0,False,39,19,16,0,4
+APP-01-PILOTGLM-r1-i001,APP-01,PILOTGLM,1,1,False,39,18,17,0,4
+APP-01-PILOTGLM-r1-i002,APP-01,PILOTGLM,1,2,False,39,19,16,0,4

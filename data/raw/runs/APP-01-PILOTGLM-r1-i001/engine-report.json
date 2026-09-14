@@ -1,0 +1,77 @@
+{
+  "results": {
+    "BUILD-005": {
+      "check_id": "BUILD-005",
+      "outcome": "pass",
+      "expected": "no fatal startup errors",
+      "observed": "clean"
+    },
+    "AUTHZ-001": {
+      "check_id": "AUTHZ-001",
+      "outcome": "pass",
+      "expected": "401/403/redirect on all protected paths",
+      "observed": "all denied"
+    },
+    "AUTHZ-002": {
+      "check_id": "AUTHZ-002",
+      "outcome": "pass",
+      "expected": "200 for allowed role/path pairs",
+      "observed": "all 200"
+    },
+    "AUTHZ-003": {
+      "check_id": "AUTHZ-003",
+      "outcome": "pass",
+      "expected": "403 for every deny-matrix probe",
+      "observed": "all 403"
+    },
+    "AUTHZ-005": {
+      "check_id": "AUTHZ-005",
+      "outcome": "pass",
+      "expected": "403 for disallowed-role API writes",
+      "observed": "all 403"
+    },
+    "AUTHZ-006": {
+      "check_id": "AUTHZ-006",
+      "outcome": "fail",
+      "expected": "protected path not 200 after logout",
+      "observed": "still 200 on /api/appointments after logout"
+    },
+    "SEC-005": {
+      "check_id": "SEC-005",
+      "outcome": "fail",
+      "expected": "HttpOnly and SameSite on session cookie",
+      "observed": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJwYXRpZW50QHZnYi5sb2NhbCIsInJvbGUiOiJwYXRpZW50IiwiaWF0IjoxNzg5MzU0MjY0fQ.DojRAXWhFY9_qG30Lm5-xtTXswOb2ec3nwa2vaeU39k; Path=/; HttpOnly"
+    },
+    "DB-004": {
+      "check_id": "DB-004",
+      "outcome": "fail",
+      "expected": "create response matches contract shape: {\"id\":\"int\",\"date\":\"date\",\"time\":\"time\",\"reason\":\"string\",\"patient\":\"string\"}",
+      "observed": "got {\"id\":3,\"date\":\"2031-02-02\",\"time\":\"10:30\",\"reason\":\"persistence probe vgb-1789354264580-61522\",\"patient_id\":2,\"patient_email\":\"patient@vgb.local\"}"
+    },
+    "DB-001": {
+      "check_id": "DB-001",
+      "outcome": "pass",
+      "expected": "created record present after restart",
+      "observed": "present"
+    },
+    "DB-002": {
+      "check_id": "DB-002",
+      "outcome": "na",
+      "detail": "no update probe in contract"
+    },
+    "DB-003": {
+      "check_id": "DB-003",
+      "outcome": "pass",
+      "expected": "record absent after restart",
+      "observed": "absent"
+    }
+  },
+  "server_log": [
+    "\n> clinic-booking-app@1.0.0 start\n> node server.js\n\n",
+    "Server running on port 49895\n",
+    "\n> clinic-booking-app@1.0.0 start\n> node server.js\n\n",
+    "Server running on port 49895\n",
+    "\n> clinic-booking-app@1.0.0 start\n> node server.js\n\n",
+    "Server running on port 49895\n"
+  ]
+}

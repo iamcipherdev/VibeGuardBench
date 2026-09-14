@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/iamcipherdev/VibeGuardBench/schemas/check-result.schema.json",
+  "title": "CheckResult",
+  "type": "object",
+  "required": ["check_id", "category", "outcome", "run_id", "iteration"],
+  "properties": {
+    "check_id": {"type": "string", "pattern": "^(BUILD|TYPE|LINT|FUNC|AUTHZ|SEC|A11Y|DB)-[0-9]{3}$"},
+    "category": {"type": "string", "enum": ["BUILD", "TYPE", "LINT", "FUNC", "AUTHZ", "SEC", "A11Y", "DB"]},
+    "outcome": {"type": "string", "enum": ["pass", "fail", "env-error", "na"]},
+    "run_id": {"type": "string", "pattern": "^[A-Z0-9]+-[A-Za-z0-9]+-r[0-9]+-i[0-9]{3}$"},
+    "iteration": {"type": "integer", "minimum": 0, "maximum": 3},
+    "observed": {"type": "string"},
+    "expected": {"type": "string"},
+    "detail": {"type": "string"},
+    "tool": {"type": "string"},
+    "tool_version": {"type": "string"},
+    "raw_ref": {"type": "string", "description": "relative path to raw tool output"},
+    "duration_ms": {"type": "integer", "minimum": 0},
+    "retried": {"type": "boolean"},
+    "spec_ref": {"type": "string"}
+  }
+}

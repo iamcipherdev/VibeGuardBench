@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://ieeexplore.ieee.org",
+    "name": "Examining Zero-Shot Vulnerability Repair with Large",
+    "snippet": "by H Pearce · 2023 · Cited by 706 — In this work, we examine the use of large language models (LLMs) for code (such as OpenAI's Codex and AI21's Jurassic J-1) for zero - shot vulnerability repair . Read more",
+    "host_name": "ieeexplore.ieee.org",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org",
+    "name": "Examining Zero-Shot Vulnerability Repair with Large",
+    "snippet": "by H Pearce · 2021 · Cited by 706 — In this work, we examine the use of large language models (LLMs) for code (such as OpenAI's Codex and AI21's Jurassic J-1) for zero - shot vulnerability repair .",
+    "host_name": "arxiv.org",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.researchgate.net",
+    "name": "Examining Zero-Shot Vulnerability Repair with Large",
+    "snippet": "On May 1, 2023, Hammond Pearce and others published Examining Zero - Shot Vulnerability Repair with Large Language Models",
+    "host_name": "www.researchgate.net",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://bibbase.org",
+    "name": "Examining Zero-Shot Vulnerability Repair with Large",
+    "snippet": "Examining Zero-Shot Vulnerability Repair with Large Language Models . Pearce ... In 2023 IEEE Symposium on Security and Privacy (SP), pages 2339–2356 ... Read more",
+    "host_name": "bibbase.org",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dl.acm.org",
+    "name": "Evaluating Large Language Models for Real-World",
+    "snippet": "Hammond Pearce, Examining Zero-Shot Vulnerability Repair with Large Language Models . IEEE/ACM International Workshop on Automated Program Repair (APR). ...",
+    "host_name": "dl.acm.org",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www2.internationalinsurance.org",
+    "name": "EXAMINING ZERO SHOT VULNERABILITY REPAIR WITH",
+    "snippet": "Zero-shot vulnerability repair refers to the ability of large language models to identify and suggest fixes for vulnerabilities in code or systems -shot ...",
+    "host_name": "www2.internationalinsurance.org",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://sp2026.ieee-security.org",
+    "name": "Accepted Papers",
+    "snippet": "Vulnerabilities Detection in. Using Large Language Models . Respond to Vulnerability Notifications. The First Large -Scale Systematic Study. Large Audio- Language ...",
+    "host_name": "sp2026.ieee-security.org",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://zenodo.org",
+    "name": "Code and Dataset for \"Examining Zero-Shot Vulnerability",
+    "snippet": "Oct 14, 2022 — It contains every language model prompt, suggestions, assembled repair patch and analysis data. It contains every script used for generation and ... Read more",
+    "host_name": "zenodo.org",
+    "rank": 7,
+    "date": "Oct 14, 2022",
+    "favicon": ""
+  }
+]

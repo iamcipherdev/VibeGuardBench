@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://arxiv.org",
+    "name": "WebGen-Bench: Evaluating LLMs on Generating",
+    "snippet": "Aug 11, 2025 — WebGen-Bench , a novel benchmark designed to measure an LLM-based agent's ability to create multi-file website codebases from scratch.",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "Aug 11, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://neurips.cc",
+    "name": "WebGen-Bench: Evaluating LLMs on Generating",
+    "snippet": "In this paper, we introduce WebGen-Bench , a novel benchmark designed to measure an LLM-based agent's ability to create multi-file website codebases from scratch ... Read more",
+    "host_name": "neurips.cc",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co",
+    "name": "luzimu/WebGen-Bench · Datasets at Hugging Face",
+    "snippet": "WebGen-Bench is created to benchmark LLM-based agent's ability to generate websites from scratch. The dataset is introduced in WebGen-Bench: Evaluating LLMs on ... Read more",
+    "host_name": "huggingface.co",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.researchgate.net",
+    "name": "(PDF) WebGen-Bench: Evaluating LLMs on Generating",
+    "snippet": "May 6, 2025 — In this paper, we introduce WebGen-Bench , a novel benchmark designed to measure an LLM-based agent's ability to create multi-file website ... Read more",
+    "host_name": "www.researchgate.net",
+    "rank": 3,
+    "date": "May 6, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.alphaxiv.org",
+    "name": "I-WebGenBench : Evaluating Interactivity in LLM-",
+    "snippet": "The paper introduces I-WebGenBench , a benchmark designed to evaluate the capability of LLMs to generate interactive scientific web applications from scratch. Read more",
+    "host_name": "www.alphaxiv.org",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.themoonlight.io",
+    "name": "[Literature Review] WebGen-Bench: Evaluating LLMs on",
+    "snippet": "WebGen - Bench : A benchmark for testing LLM -based agents' ability to generate websites from scratch. Comprehensive evaluations of code-agent frameworks using ... Read more",
+    "host_name": "www.themoonlight.io",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com",
+    "name": "mnluzimu/WebGen-Bench",
+    "snippet": "This repository contains the code for reproducing the paper WebGen-Bench : Evaluating LLMs on Generating Interactive and Functional Websites from Scratch.",
+    "host_name": "github.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://deeplearn.org",
+    "name": "WebGen-Bench: Evaluating LLMs on Generating",
+    "snippet": "May 6, 2025 — In this paper, we introduce WebGen-Bench , anovel benchmark designed to measure an LLM-based agent's ability to createmulti-file website ...",
+    "host_name": "deeplearn.org",
+    "rank": 7,
+    "date": "May 6, 2025",
+    "favicon": ""
+  }
+]

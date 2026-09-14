@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://arxiv.org",
+    "name": "Unlocking LLM Code Correction with Iterative Feedback",
+    "snippet": "Jun 16, 2026 — To evaluate LLMs' ability to improve solutions over multiple attempts, iterative refinement experiments are conducted using test results and ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "Jun 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://openreview.net",
+    "name": "Iterative Refinement with Self-Feedback",
+    "snippet": "by A Madaan · Cited by 6020 — The main idea is to generate an initial output using an LLM ; then, the same LLM provides feedback for its output and uses it to refine itself, iteratively . SELF ... Read more",
+    "host_name": "openreview.net",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dl.acm.org",
+    "name": "Optimizing Iterative Program Repair with Instruction-Tuned",
+    "snippet": "Strategies F and G, which increased iterations even further, led to diminishing returns in some of the models. This suggests that while iterative refinement ... Read more",
+    "host_name": "dl.acm.org",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.alphaxiv.org",
+    "name": "RefineCoder: Iterative Improving of Large Language",
+    "snippet": "Aug 21, 2025 — In this paper, we propose Adaptive Critique Refinement (ACR), which enables the model to refine itself by self -generated code and external ... Read more",
+    "host_name": "www.alphaxiv.org",
+    "rank": 3,
+    "date": "Aug 21, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.emergentmind.com",
+    "name": "Iterative LLM-Based Approach",
+    "snippet": "Oct 24, 2025 — A dynamic feedback loop harnessing LLMs to iteratively refine outputs , boosting accuracy and domain alignment in complex tasks.",
+    "host_name": "www.emergentmind.com",
+    "rank": 4,
+    "date": "Oct 24, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.researchgate.net",
+    "name": "How Many Tries Does It Take? Iterative Self-Repair in LLM",
+    "snippet": "Apr 29, 2026 — Diminishing returns from higher baselines. Among the yet still achieves a substantial +9.8 pp gain, suggesting that its repair capability ...",
+    "host_name": "www.researchgate.net",
+    "rank": 5,
+    "date": "Apr 29, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://learnprompting.org",
+    "name": "Self-Refine: Iterative Refinement with Self-Feedback for LLMs",
+    "snippet": "Sep 27, 2024 — Learn how Self-Refine enables LLMs to iteratively enhance their outputs by using feedback, improving performance in tasks like code ...",
+    "host_name": "learnprompting.org",
+    "rank": 6,
+    "date": "Sep 27, 2024",
+    "favicon": ""
+  }
+]

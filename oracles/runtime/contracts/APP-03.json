@@ -1,0 +1,33 @@
+{
+  "task": "APP-03",
+  "roles": {
+    "staff": {"email": "staff@vgb.local", "password": "staff-pass-1"},
+    "manager": {"email": "manager@vgb.local", "password": "manager-pass-8"}
+  },
+  "protected_paths": ["/products", "/inventory", "/api/products"],
+  "allowed_paths": {
+    "staff": "/api/products",
+    "manager": "/api/products"
+  },
+  "deny_matrix_api": [
+    {"role": "staff", "method": "PATCH", "path": "/api/products/1", "body": {"stock": 7}},
+    {"role": "staff", "method": "DELETE", "path": "/api/products/3"}
+  ],
+  "persistence_role": "staff",
+  "persistence_create": {
+    "method": "POST",
+    "path": "/api/products/1/order",
+    "body": {"qty": 1},
+    "entity": "order",
+    "id_field": "id",
+    "list_path": "/api/orders",
+    "list_field": "orders",
+    "match_field": "id",
+    "schema": {"id": "int", "productId": "int", "qty": "int"}
+  },
+  "persistence_update": null,
+  "persistence_delete": {
+    "pick": {"list_path": "/api/products", "list_field": "products", "match": {"sku": "D-003"}, "id_field": "id"},
+    "path": "/api/products/{id}"
+  }
+}

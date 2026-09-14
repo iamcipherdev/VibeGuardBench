@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://dl.acm.org",
+    "name": "Do Users Write More Insecure Code with AI Assistants?",
+    "snippet": "Overall, we find that participants who had access to an AI assistant wrote significantly less secure code than those without access to an assistant. Read more",
+    "host_name": "dl.acm.org",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org",
+    "name": "Do Users Write More Insecure Code with AI Assistants?",
+    "snippet": "by N Perry · 2022 · Cited by 651 — Overall, we find that participants who had access to an AI assistant wrote significantly less secure code than those without access to an assistant.",
+    "host_name": "arxiv.org",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://getdx.com",
+    "name": "Do Users Write More Insecure Code with AI Assistants?",
+    "snippet": "Overall, we find that participants who had access to an AI assistant wrote significantly less secure code than those without access to an assistant. Read more",
+    "host_name": "getdx.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.alphaxiv.org",
+    "name": "Do Users Write More Insecure Code with AI Assistants?",
+    "snippet": "Overall, we find that participants who had access to an AI assistant based on OpenAI's codex-davinci-002 model wrote significantly less secure code than those ... Read more",
+    "host_name": "www.alphaxiv.org",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ee.stanford.edu",
+    "name": "Dan Boneh and team find relying on AI is more likely to",
+    "snippet": "Jan 11, 2023 — Additionally, participants with access to an AI assistant were more likely to believe they wrote secure code than those without access to the AI ... Read more",
+    "host_name": "ee.stanford.edu",
+    "rank": 4,
+    "date": "Jan 11, 2023",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com",
+    "name": "NeilAPerry/Do-Users-Write-More-Insecure-Code-with-AI-",
+    "snippet": "In this work, we build a user study interface to help investigate whether open access to an AI Assistant (based on OpenAI's codex-davinci-002 model) causes ... Read more",
+    "host_name": "github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openreview.net",
+    "name": "Do Users Write More Insecure Code with AI Assistants?",
+    "snippet": "We conduct the first large-scale user study examin- ing how users interact with an AI Code assistant to solve a variety of security related tasks across dif-. Read more 14 pages",
+    "host_name": "openreview.net",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://icml.cc",
+    "name": "Do Users Write More Insecure Code with AI Assistants?",
+    "snippet": "We conduct the first large-scale user study examining how users interact with an AI Code assistant to solve avariety of security related tasks",
+    "host_name": "icml.cc",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

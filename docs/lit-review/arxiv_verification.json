@@ -1,0 +1,62 @@
+{
+  "swebench": {
+    "error": "The read operation timed out"
+  },
+  "canitedit": {
+    "error": "HTTP Error 429: Unknown Error"
+  },
+  "swebench_plus": {
+    "error": "HTTP Error 429: Unknown Error"
+  },
+  "solved_issues_swebench": {
+    "error": "HTTP Error 429: Unknown Error"
+  },
+  "webgenbench": {
+    "error": "The read operation timed out"
+  },
+  "appworld": {
+    "error": "HTTP Error 429: Unknown Error"
+  },
+  "devbench": {
+    "error": "HTTP Error 429: Unknown Error"
+  },
+  "fullstackbench": {
+    "error": "HTTP Error 429: Unknown Error"
+  },
+  "perry_insecure": {
+    "error": "HTTP Error 429: Unknown Error"
+  },
+  "pearce_zeroshot_repair": {
+    "error": "HTTP Error 429: Unknown Error"
+  },
+  "pearce_asleep": {
+    "error": "HTTP Error 429: Unknown Error"
+  },
+  "apr_regression_testing": {
+    "error": "HTTP Error 429: Unknown Error"
+  },
+  "self_refine": {
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  "cannot_selfcorrect": {
+    "error": "The read operation timed out"
+  },
+  "reflexion": {
+    "error": "HTTP Error 429: Unknown Error"
+  },
+  "agentless": {
+    "error": "HTTP Error 429: Unknown Error"
+  },
+  "autocoderoover": {
+    "error": "HTTP Error 429: Unknown Error"
+  },
+  "vibe_coding_survey": {
+    "error": "HTTP Error 429: Unknown Error"
+  },
+  "commit0": {
+    "error": "HTTP Error 429: Unknown Error"
+  },
+  "semgrep_aide": {
+    "error": "HTTP Error 429: Unknown Error"
+  }
+}

@@ -1,0 +1,3 @@
+[
+  "state reset: removed clinic.db"
+]

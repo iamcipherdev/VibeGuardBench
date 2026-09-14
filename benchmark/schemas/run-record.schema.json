@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/iamcipherdev/VibeGuardBench/schemas/run-record.schema.json",
+  "title": "RunRecord",
+  "type": "object",
+  "required": ["run_id", "task", "builder", "repetition", "iteration", "started_utc", "finished_utc", "env", "checks"],
+  "properties": {
+    "run_id": {"type": "string", "pattern": "^[A-Z0-9]+-[A-Za-z0-9]+-r[0-9]+-i[0-9]{3}$"},
+    "task": {"type": "string", "enum": ["APP-01", "APP-02", "APP-03"]},
+    "builder": {"type": "string", "minLength": 2},
+    "repetition": {"type": "integer", "minimum": 1, "maximum": 3},
+    "iteration": {"type": "integer", "minimum": 0, "maximum": 3},
+    "started_utc": {"type": "string", "format": "date-time"},
+    "finished_utc": {"type": "string", "format": "date-time"},
+    "builder_platform": {
+      "type": "object",
+      "properties": {
+        "platform": {"type": "string"},
+        "tier": {"type": "string"},
+        "model_disclosed": {"type": ["string", "null"], "description": "null when platform does not disclose"},
+        "platform_version": {"type": ["string", "null"]},
+        "generation_mode": {"type": ["string", "null"]},
+        "settings": {"type": ["object", "null"]}
+      }
+    },
+    "env": {
+      "type": "object",
+      "properties": {
+        "os": {"type": "string"},
+        "node": {"type": "string"},
+        "npm": {"type": "string"},
+        "python": {"type": "string"},
+        "playwright": {"type": "string"},
+        "semgrep": {"type": "string"},
+        "tsc": {"type": ["string", "null"]},
+        "eslint": {"type": ["string", "null"]},
+        "axe_core": {"type": "string"}
+      }
+    },
+    "dep_manifest_diff": {"type": ["array", "null"], "items": {"type": "string"}},
+    "app_dir": {"type": "string"},
+    "checks": {"type": "array", "items": {"$ref": "check-result.schema.json"}},
+    "prompt_ref": {"type": "string"},
+    "feedback_ref": {"type": ["string", "null"]},
+    "env_interventions": {"type": "array", "items": {"type": "string"}},
+    "excluded": {"type": "boolean"},
+    "exclusion_reason": {"type": ["string", "null"]},
+    "retries": {"type": "array", "items": {"type": "object", "properties": {"at": {"type": "string"}, "reason": {"type": "string"}}, "required": ["at", "reason"]}},
+    "operator_notes": {"type": "string"}
+  }
+}
